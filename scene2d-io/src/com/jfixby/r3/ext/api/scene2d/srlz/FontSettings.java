@@ -10,7 +10,7 @@ public class FontSettings implements java.io.Serializable {
 	public boolean value_is_in_pixels = false;
 	public float font_size = 0;
 	public String name;
-	public float font_scale = 1f;
+// public float font_scale = 1f;
 	public String font_color = "#ff00000000";
 
 }
