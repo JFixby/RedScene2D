@@ -1,15 +1,30 @@
-apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: "java"
+apply plugin: "maven"
 
 sourceCompatibility = 1.6
-targetCompatibility = 1.6
-
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
-dependencies {
-	  compile "com.github.Scarabei.Scarabei:scarabei-api:$scarabeiVersion"
+
+repositories {
+        	 maven { url 'https://jitpack.io' }
+        	 mavenCentral()
 }
 
+dependencies {
+
+}
+
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/']
+        }
+        resources {
+            
+        }
+    }
+}
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
@@ -39,18 +54,5 @@ install {
       }
     }
   }
-}	
-	
-
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src/']
-        }
-        resources {
-            
-        }
-    }
 }
-    
-    
+
