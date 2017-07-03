@@ -1,1 +1,3 @@
-include "scene2d-api"
+include "scene2d-io"
+include "scene2d-io-reader"
+include "scene2d-r3-spawner"
