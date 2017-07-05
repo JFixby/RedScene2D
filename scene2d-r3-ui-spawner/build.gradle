@@ -1,4 +1,0 @@
-dependencies {
-      compile project(":scene2d-io")
-      //compile "com.github.Scarabei.Scarabei:scarabei-api:$scarabeiVersion"
-}
