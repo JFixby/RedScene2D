@@ -7,7 +7,7 @@ import com.jfixby.r3.ext.api.scene2d.srlz.Scene2DPackage;
 import com.jfixby.r3.ext.api.scene2d.srlz.SceneStructure;
 import com.jfixby.rana.api.AssetsContainer;
 import com.jfixby.rana.api.format.PackageFormat;
-import com.jfixby.rana.api.loader.PackageReader;
+import com.jfixby.rana.api.loader.PackageLoader;
 import com.jfixby.rana.api.loader.PackageReaderInput;
 import com.jfixby.scarabei.api.assets.ID;
 import com.jfixby.scarabei.api.assets.Names;
@@ -19,7 +19,7 @@ import com.jfixby.scarabei.api.io.IO;
 import com.jfixby.scarabei.api.java.ByteArray;
 import com.jfixby.scarabei.api.log.L;
 
-public class Scene2DPackageLoader implements PackageReader {
+public class Scene2DPackageLoader implements PackageLoader {
 
 	final List<PackageFormat> acceptablePackageFormats;
 
