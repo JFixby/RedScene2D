@@ -1,4 +1,4 @@
-package com.jfixby.r3.ext.api.scene2d.srlz;
+package com.jfixby.r3.io.scene2d;
 
 public class Anchor implements java.io.Serializable{
 
